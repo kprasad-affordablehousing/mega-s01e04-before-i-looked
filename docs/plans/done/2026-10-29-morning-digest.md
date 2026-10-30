@@ -1,8 +1,9 @@
 ---
 plan: morning-digest
-status: ready
+status: done
 owner: rook
 opened: 2026-10-29
+closed: 2026-10-30
 ---
 
 # Morning digest
@@ -77,3 +78,17 @@ page again with `LANE_MARKER` unset (the banner reads "no marker set") and uploa
 link. Move this plan to `docs/plans/done/` with its issue list.
 
 Done when: the preview link no longer shows the lane marker.
+
+## Issues
+
+| # | Issue | Blocked by | Worker | Closed |
+|---|-------|-----------|--------|--------|
+| 1 | Read and aggregate the nightly run log | — | Copilot · claude-opus-5.5 · high | 2026-10-30 |
+| 2 | Render the nightly digest page | #1 (types) | Copilot · claude-haiku-5.5 · high | 2026-10-30 |
+| 3 | Expose the digest JSON endpoint | #1 (types) | Copilot · claude-haiku-5.5 · high | 2026-10-30 |
+| 4 | Link nightly digests from the status board | #1 (types) | Copilot · claude-haiku-5.5 · high | 2026-10-30 |
+| 5 | Test HTML and JSON digest routes | #1 (types) | Copilot · claude-haiku-5.5 · high | 2026-10-30 |
+| 6 | Publish the static digest preview for review | #1–#5 | Copilot · gpt-6.1-sol · default | 2026-10-30 |
+| 7 | Remove the preview marker and archive the plan | #6, review | Copilot · claude-opus-5.5 · default | 2026-10-30 |
+
+Issue 6 was closed once before the reviewer looked, then reopened and closed again after the review.
